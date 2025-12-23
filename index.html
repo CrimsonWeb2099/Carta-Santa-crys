@@ -11,101 +11,74 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(180deg, #0b1d2a, #12344d);
-      font-family: 'Georgia', serif;
-      color: #2b2b2b;
-    }.card {
-  background: #fffaf3;
+      background: #0f3d2e;
+      overflow: hidden;
+      font-family: 'Georgia', cursive;
+    }/* Emojis de fondo cayendo */
+.tree {
+  position: fixed;
+  top: -10vh;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+  }
+}
+
+.card {
+  background: #fdfcf8;
   width: 90%;
-  max-width: 700px;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  max-width: 900px;
+  min-height: 70vh;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
   position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: "❄ ❄ ❄";
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 20px;
-  color: #c9d9e8;
-}
-
-h1 {
-  text-align: center;
-  color: #b22222;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  text-align: center;
-  font-style: italic;
-  color: #6b6b6b;
-  margin-bottom: 30px;
+  z-index: 2;
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.signature {
-  margin-top: 40px;
-  text-align: right;
-  font-size: 1.1rem;
-}
-
-.signature span {
-  display: block;
-  margin-top: 5px;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  margin-bottom: 30px;
   font-style: italic;
-  color: #555;
+  color: #1f1f1f;
 }
 
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #888;
+a {
+  color: #0f3d2e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
   </style>
 </head>
-<body>
+<body>  <!-- Emojis de fondo --><span class="tree" style="left:5%; animation-duration:8s;">🎄</span> <span class="tree" style="left:15%; animation-duration:10s;">🎄</span> <span class="tree" style="left:25%; animation-duration:7s;">🎄</span> <span class="tree" style="left:35%; animation-duration:9s;">🎄</span> <span class="tree" style="left:45%; animation-duration:11s;">🎄</span> <span class="tree" style="left:55%; animation-duration:8.5s;">🎄</span> <span class="tree" style="left:65%; animation-duration:10.5s;">🎄</span> <span class="tree" style="left:75%; animation-duration:7.5s;">🎄</span> <span class="tree" style="left:85%; animation-duration:9.5s;">🎄</span>
+
   <div class="card">
-    <h1>Querido Santa Crys</h1>
-    <div class="subtitle">Una carta con espíritu navideño (casi intacto)</div><p>
-  Este año me porté muy bien… bueno, hice lo que pude 😌 y no perdí el espíritu
-  navideño (casi).
-</p>
-
-<p>
+    <p>
+      Querido Santa Crys, este año me porté muy bien (bueno, hice lo que pude) y no perdí el espíritu (casi).
+    </p><p>
   Así que vengo humildemente a pedir estos sets:
-</p>
-
-<p>
-  🎁 <a href="https://everskies.com/item/set/71946" target="_blank">Set 1</a><br />
+  <br /><br />
+  🎁 <a href="https://everskies.com/item/set/71946" target="_blank">Set 1</a>
+  <br />
   🎁 <a href="https://everskies.com/item/set/98589" target="_blank">Set 2</a>
 </p>
 
 <p>
-  Prometo usarlos y hacer avis muy bonitos ✨
+  Prometo usarlos y hacer avis muy bonitos.
 </p>
 
-<div class="signature">
-  Con cariño,
-  <span>Val</span>
-</div>
-
-<div class="footer">
-  ❄ Navidad • Sets • Espíritu ❄
-</div>
-
-  </div>
-</body>
+  </div></body>
 </html>
